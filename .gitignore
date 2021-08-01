@@ -1,6 +1,7 @@
 # project-specific
 _build/
 _nuget/
+_skbuild/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
