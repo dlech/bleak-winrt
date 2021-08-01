@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     license="MIT",
     author='Microsoft Corporation',
-    url="https://github.com/dlech/bleak_winrt",
+    url="https://github.com/dlech/bleak-winrt",
     classifiers=[
             'Development Status :: 4 - Beta',
             'Environment :: Win32 (MS Windows)',
