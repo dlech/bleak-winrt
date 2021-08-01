@@ -1,0 +1,37 @@
+name: build
+on: 
+  push:
+    tags:
+      - v1.*
+
+jobs:
+  sdist:
+    runs-on: windows-2019
+    steps:
+      - uses: actions/checkout@v2
+      - run: python -m pip install build
+      - run: python -m build --sdist
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: dlech
+          password: ${{ secrets.PYPI_API_TOKEN }}
+
+  bdist:
+    runs-on: windows-2019
+    strategy:
+      matrix:
+        python-version: ['3.7', '3.8', '3.9']
+        architecture: ['x86', 'x64']
+    name: Python ${{ matrix.python-version }} ${{ matrix.architecture }}
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-python@v2
+        with:
+          python-version: ${{ matrix.python-version }}
+          architecture: ${{ matrix.architecture }}
+      - run: python -m pip install build
+      - run: python -m build --wheel
+      - uses: pypa/gh-action-pypi-publish@release/v1
+        with:
+          user: dlech
+          password: ${{ secrets.PYPI_API_TOKEN }}

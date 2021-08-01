@@ -1,3 +1,7 @@
+# project-specific
+_build/
+_nuget/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
