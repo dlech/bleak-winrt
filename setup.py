@@ -5,8 +5,8 @@ with open("README.md") as f:
     long_description = f.read()
 
 setup(
-    name = "bleak-winrt",
-    version = "1.0.0b1",
+    name="bleak-winrt",
+    version = "1.0.0b2",
     description="Python WinRT bindings for Bleak",
     long_description=long_description,
     long_description_content_type="text/markdown",
