@@ -5,6 +5,7 @@
 
 ### Fixed
 - Fixed repository URL in metadata.
+- Fixed top level directory in package.
 
 ## [1.0.0b1] - 2021-07-31
 

@@ -1,4 +1,3 @@
-from setuptools import find_namespace_packages
 
 from skbuild import setup
 
@@ -25,6 +24,7 @@ setup(
             'Programming Language :: Python :: Implementation :: CPython',
             'Topic :: System :: Operating System',
         ],
-    packages = find_namespace_packages(include=("bleak_winrt*")),
+    packages=["bleak_winrt"],
+    package_dir={"bleak_winrt": "pywinrt"}, 
     cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_C_COMPILER=cl', '-DCMAKE_CXX_COMPILER=cl'],
 )
