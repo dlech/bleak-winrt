@@ -47,7 +47,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # TODO: re-enable /GL and /LTCG when we get a bigger build machine
 add_compile_options(/await /bigobj /GR- /permissive-)
 
-find_package (Python3 ${PYTHON_VERSION} EXACT COMPONENTS Interpreter Development)
+find_package (Python3 ${PYTHON_VERSION_STRING} EXACT COMPONENTS Interpreter Development)
 
 Python3_add_library (_${CMAKE_PROJECT_NAME} MODULE ${sources})
 set_target_properties(_${CMAKE_PROJECT_NAME} PROPERTIES LIBRARY_OUTPUT_NAME_DEBUG _${CMAKE_PROJECT_NAME}_d)

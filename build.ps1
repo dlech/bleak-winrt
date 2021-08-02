@@ -14,7 +14,7 @@ $sourcePath = "$PSScriptRoot"
 $buildPath = "$repoRootPath\_build\$env:VSCMD_ARG_TGT_ARCH-$buildType"
 $packagePath = "$sourcePath\pywinrt"
 
-cmake -S $sourcePath "-B$buildPath" -GNinja "-DCMAKE_BUILD_TYPE=$buildType" -DCMAKE_C_COMPILER=cl -DCMAKE_CXX_COMPILER=cl "-DPYTHON_VERSION=$pythonVersion"
+cmake -S $sourcePath "-B$buildPath" -GNinja "-DCMAKE_BUILD_TYPE=$buildType" -DCMAKE_C_COMPILER=cl -DCMAKE_CXX_COMPILER=cl "-DPYTHON_VERSION_STRING=$pythonVersion"
 cmake --build $buildPath -- -v 
 
 Copy-Item "$buildPath\*.pyd" "$packagePath\bleak_winrt\"

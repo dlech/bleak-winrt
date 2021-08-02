@@ -1,6 +1,11 @@
 
 # Changelog
 
+## [1.0.0b4] - 2021-08-01
+
+### Fixed
+- Fixed `_bleak_winrt.pyd` built against wrong Python version.
+
 ## [1.0.0b3] - 2021-08-01
 
 ### Fixed
