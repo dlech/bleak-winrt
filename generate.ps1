@@ -19,8 +19,8 @@ $pywinrt_path = "$projectionPath\pywinrt"
 Remove-Item $cppwinrt_path -Recurse -Force -ErrorAction SilentlyContinue
 Remove-Item $pywinrt_path -Recurse -Force -ErrorAction SilentlyContinue
 
-$pyinclude = "Windows.Foundation", "Windows.Storage.Streams", "Windows.Devices.Bluetooth"
-$pyexclude = "Windows.Foundation.Diagnostics", "Windows.Foundation.Metadata", "Windows.Foundation.Numerics", "Windows.Devices.Bluetooth.Rfcomm"
+$pyinclude = "Windows.Foundation", "Windows.Storage.Streams", "Windows.Devices.Bluetooth", "Windows.Devices.Enumeration"
+$pyexclude = "Windows.Foundation.Diagnostics", "Windows.Foundation.Metadata", "Windows.Foundation.Numerics", "Windows.Devices.Bluetooth.Rfcomm", "Windows.Devices.Enumeration.Pnp"
 
 $pyin = $pyinclude | ForEach-Object { "-include", "$_" }
 $pyout = $pyexclude | ForEach-Object { "-exclude", "$_" }

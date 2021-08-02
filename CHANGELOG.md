@@ -1,6 +1,11 @@
 
 # Changelog
 
+## [1.0.0b5] - 2021-08-01
+
+### Added
+- Added `Windows.Devices.Enumeration` namespace.
+
 ## [1.0.0b4] - 2021-08-01
 
 ### Fixed
