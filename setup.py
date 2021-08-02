@@ -7,7 +7,7 @@ with open("README.md") as f:
 
 setup(
     name="bleak-winrt",
-    version = "1.0.0b4",
+    version = "1.0.0b5",
     description="Python WinRT bindings for Bleak",
     long_description=long_description,
     long_description_content_type="text/markdown",
