@@ -2,6 +2,12 @@
 
 # Changelog
 
+## [1.0.0b6] - 2021-08-06
+
+### Added
+- Added builds for Python 3.10.
+- Updated generated files for Python/WinRT and C++/WinRT.
+
 ## [1.0.0b5] - 2021-08-01
 
 ### Added
@@ -31,7 +37,8 @@
 - Initial release
 
 
-[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b5...main
+[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b6...main
+[1.0.0b6]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b5...v1.0.0b6
 [1.0.0b5]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b4...v1.0.0b5
 [1.0.0b4]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b3...v1.0.0b4
 [1.0.0b3]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b2...v1.0.0b3
