@@ -2,6 +2,14 @@
 
 # Changelog
 
+## [Unreleased]
+
+### Added
+- Python type hints.
+
+### Changed
+- Updated generated files for Python/WinRT and C++/WinRT.
+
 ## [1.0.0b6] - 2021-08-06
 
 ### Added
