@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.0.0] - 2021-08-06
+
 ### Added
 - Python type hints.
 
@@ -45,7 +47,8 @@
 - Initial release
 
 
-[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b6...main
+[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.0...main
+[1.0.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b6...v1.0.0
 [1.0.0b6]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b5...v1.0.0b6
 [1.0.0b5]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b4...v1.0.0b5
 [1.0.0b4]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b3...v1.0.0b4
