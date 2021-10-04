@@ -4,7 +4,7 @@
 
 ## [Unreleased]
 
-## [1.0.0] - 2021-08-06
+## [1.0.0] - 2021-10-04
 
 ### Added
 - Python type hints.
