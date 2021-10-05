@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.0.1] - 2021-10-05
+
 ### Fixed
 - Type hints not included in binary wheels.
 - Incorrect binary module file name.
@@ -51,7 +53,8 @@
 - Initial release
 
 
-[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.0...main
+[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.1...main
+[1.0.1]: https://github.com/dlech/bleak-winrt/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b6...v1.0.0
 [1.0.0b6]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b5...v1.0.0b6
 [1.0.0b5]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b4...v1.0.0b5
