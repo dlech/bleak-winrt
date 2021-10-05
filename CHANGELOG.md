@@ -6,6 +6,7 @@
 
 ### Fixed
 - Type hints not included in binary wheels.
+- Incorrect binary module file name.
 
 ## [1.0.0] - 2021-10-04
 

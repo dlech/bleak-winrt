@@ -52,13 +52,13 @@ string(REGEX MATCH "^[0-9]\\.[0-9]+(\\.[0-9]+)?" PYTHON_BASE_VERSION ${PYTHON_VE
 
 find_package (Python3 ${PYTHON_BASE_VERSION} EXACT COMPONENTS Interpreter Development)
 
-Python3_add_library (_${CMAKE_PROJECT_NAME} MODULE ${sources})
-set_target_properties(_${CMAKE_PROJECT_NAME} PROPERTIES LIBRARY_OUTPUT_NAME_DEBUG _${CMAKE_PROJECT_NAME}_d)
+Python3_add_library (_winrt MODULE ${sources})
+set_target_properties(_winrt PROPERTIES LIBRARY_OUTPUT_NAME_DEBUG _winrt_d)
 
-target_include_directories(_${CMAKE_PROJECT_NAME} PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/cppwinrt" "${CMAKE_CURRENT_SOURCE_DIR}/pywinrt/${CMAKE_PROJECT_NAME}/src")
-target_link_libraries(_${CMAKE_PROJECT_NAME} PRIVATE onecore)
+target_include_directories(_winrt PUBLIC "${CMAKE_CURRENT_SOURCE_DIR}/cppwinrt" "${CMAKE_CURRENT_SOURCE_DIR}/pywinrt/${CMAKE_PROJECT_NAME}/src")
+target_link_libraries(_winrt PRIVATE onecore)
 
-TARGET_CONFIG_MSVC_PCH(_${CMAKE_PROJECT_NAME} pch.cpp pch.h)
+TARGET_CONFIG_MSVC_PCH(_winrt pch.cpp pch.h)
 
 string(REPLACE "/MDd" "/MTd" CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG}")
 foreach(build_type RELEASE MINSIZEREL RELWITHDEBINFO)
@@ -73,4 +73,4 @@ if (CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL "19.20.27404.0")
     string(APPEND CMAKE_CXX_FLAGS " /d2FH4")
 endif()
 
-install(TARGETS _${CMAKE_PROJECT_NAME} DESTINATION "pywinrt/${CMAKE_PROJECT_NAME}")
+install(TARGETS _winrt DESTINATION "pywinrt/${CMAKE_PROJECT_NAME}")
