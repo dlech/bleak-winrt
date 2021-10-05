@@ -29,4 +29,6 @@ setup(
     packages=find_namespace_packages(where=("pywinrt")),
     package_dir={"": "pywinrt"}, 
     cmake_args=['-DCMAKE_BUILD_TYPE=Release', '-DCMAKE_C_COMPILER=cl', '-DCMAKE_CXX_COMPILER=cl'],
+    # recursive glob (**) doesn't seem to work here
+    package_data={"bleak_winrt": ["py.typed", "*.pyi", "*/*.pyi", "*/*/*.pyi", "*/*/*/*.pyi", "*/*/*/*/*.pyi"]},
 )
