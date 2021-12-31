@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.1.0] - 2021-12-30
+
 ### Changed
 - Updated generated code to to Window 11 API (build 22000), C++/WinRT v2.0.211028.7,
   Python/WinRT v1.0.0-alpha.6
@@ -57,7 +59,8 @@
 - Initial release
 
 
-[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.0.1...main
+[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.1.0...main
+[1.1.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/dlech/bleak-winrt/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b6...v1.0.0
 [1.0.0b6]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b5...v1.0.0b6
