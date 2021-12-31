@@ -1,6 +1,6 @@
 param ([switch]$skipNugetInstall)
 
-$windows_sdk = '10.0.18362.0'
+$windows_sdk = '10.0.22000.0'
 $repoRootPath = (Get-Item $PSScriptRoot).FullName
 $nugetPath = "$repoRootPath\_nuget"
 $projectionPath = "$PSScriptRoot"

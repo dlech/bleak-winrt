@@ -4,6 +4,10 @@
 
 ## [Unreleased]
 
+### Changed
+- Updated generated code to to Window 11 API (build 22000), C++/WinRT v2.0.211028.7,
+  Python/WinRT v1.0.0-alpha.6
+
 ## [1.0.1] - 2021-10-05
 
 ### Fixed
