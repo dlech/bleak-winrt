@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.1.1] - 2022-01-18
+
 ### Changed
 - Use statically linked MSVC runtime library.
 
@@ -62,7 +64,8 @@
 - Initial release
 
 
-[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.1.0...main
+[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.1.1...main
+[1.1.1]: https://github.com/dlech/bleak-winrt/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/dlech/bleak-winrt/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.0b6...v1.0.0
