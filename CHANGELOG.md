@@ -4,6 +4,8 @@
 
 ## [Unreleased]
 
+## [1.2.0] - 2022-09-09
+
 ### Added
 - Added builds for Python 3.11.
 
@@ -71,7 +73,8 @@
 - Initial release
 
 
-[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.1.1...main
+[Unreleased]: https://github.com/dlech/bleak-winrt/compare/v1.2.0...main
+[1.2.0]: https://github.com/dlech/bleak-winrt/compare/v1.1.1...v1.2.0
 [1.1.1]: https://github.com/dlech/bleak-winrt/compare/v1.1.0...v1.1.1
 [1.1.0]: https://github.com/dlech/bleak-winrt/compare/v1.0.1...v1.1.0
 [1.0.1]: https://github.com/dlech/bleak-winrt/compare/v1.0.0...v1.0.1
