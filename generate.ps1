@@ -1,16 +1,18 @@
 param ([switch]$skipNugetInstall)
 
-$windows_sdk = '10.0.22000.0'
+$pywinrt_version = '1.0.0-beta.7'
+$cppwinrt_version = '2.0.220608.4'
+$windows_sdk_version = '10.0.22621.0'
 $repoRootPath = (Get-Item $PSScriptRoot).FullName
 $nugetPath = "$repoRootPath\_nuget"
 $projectionPath = "$PSScriptRoot"
 
 if (!$skipNugetInstall) {
-    nuget install Microsoft.Windows.PyWinRT -Prerelease -ExcludeVersion -OutputDirectory "$nugetPath"
-    nuget install Microsoft.Windows.CppWinRT -ExcludeVersion -OutputDirectory "$nugetPath"
+    nuget install PyWinRT -Version $pywinrt_version -Prerelease -NoCache -ExcludeVersion -OutputDirectory "$nugetPath"
+    nuget install Microsoft.Windows.CppWinRT -Version $cppwinrt_version -ExcludeVersion -OutputDirectory "$nugetPath"
 }
 
-$pywinrt_exe = "$nugetPath\Microsoft.Windows.PyWinRT\bin\pywinrt.exe"
+$pywinrt_exe = "$nugetPath\PyWinRT\bin\pywinrt.exe"
 $cppwinrt_exe = "$nugetPath\Microsoft.Windows.CppWinRT\bin\cppwinrt.exe"
 
 $cppwinrt_path = "$projectionPath\cppwinrt"
@@ -27,7 +29,7 @@ $pyout = $pyexclude | ForEach-Object { "-exclude", "$_" }
 
 # FIXME: -include and -exclude don't seem to work for cppwinrt.exe
 # it would be nice to only generate required files
-& $cppwinrt_exe -input $windows_sdk -output $cppwinrt_path
+& $cppwinrt_exe -input $windows_sdk_version -output $cppwinrt_path
 
-$pyparams = ("-module", "bleak_winrt", "-input", $windows_sdk, "-output", $pywinrt_path, "-verbose") + $pyin + $pyout
+$pyparams = ("-module", "bleak_winrt", "-input", $windows_sdk_version, "-output", $pywinrt_path, "-verbose") + $pyin + $pyout
 & $pywinrt_exe $pyparams
