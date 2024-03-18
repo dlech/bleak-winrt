@@ -4,6 +4,9 @@
 
 ## [Unreleased]
 
+### Added
+- Added builds for Python 3.12.
+
 ## [1.2.0] - 2022-09-09
 
 ### Added
